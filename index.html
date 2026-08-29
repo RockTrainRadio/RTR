@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Rock Train Radio — Rock que sigue rodando. Escucha la señal en vivo.">
+<meta property="og:title" content="Rock Train Radio">
+<meta property="og:description" content="Rock que sigue rodando. Escucha Rock Train Radio en vivo.">
+<title>Rock Train Radio — En vivo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<main class="app">
+<header class="topbar">
+<a class="brand" href="#" aria-label="Rock Train Radio">
+<span class="brand-mark">RTR</span>
+<span class="brand-text"><strong>ROCK TRAIN</strong><small>RADIO</small></span>
+</a>
+<div class="live-pill"><span class="dot"></span> EN VIVO</div>
+</header>
+
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">LA SEÑAL DEL ROCK</p>
+<h1>ROCK TRAIN<br><em>RADIO</em></h1>
+<p class="tagline">Rock que sigue rodando.</p>
+
+<div class="player-card">
+<div class="cover"><div class="vinyl"><span>RTR</span></div></div>
+<div class="track-info">
+<p class="label">AHORA SONANDO</p>
+<h2 id="nowPlaying">Rock Train Radio</h2>
+<p id="status">Listo para escuchar</p>
+</div>
+<button id="playButton" class="play" aria-label="Reproducir Rock Train Radio"><span id="playIcon">▶</span></button>
+</div>
+
+<div class="volume-row">
+<span>🔊</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volumen">
+<span id="volumeValue">85%</span>
+</div>
+<audio id="radio" preload="none"></audio>
+<p id="error" class="error" role="alert" hidden></p>
+</div>
+
+<div class="hero-art" aria-hidden="true">
+<div class="rail rail-a"></div><div class="rail rail-b"></div>
+<div class="train">
+<div class="locomotive">
+<div class="smoke s1"></div><div class="smoke s2"></div><div class="smoke s3"></div>
+<div class="cab"></div><div class="window"></div><div class="front"></div>
+<div class="wheel w1"></div><div class="wheel w2"></div><div class="wheel w3"></div>
+</div>
+<div class="wagon"><span>ROCK</span></div><div class="wagon"><span>TRAIN</span></div>
+</div>
+<div class="speed-lines"></div>
+</div>
+</section>
+
+<section class="info-grid">
+<article><span class="num">01</span><h3>EN VIVO</h3><p>Conecta directamente con la señal de Rock Train Radio.</p></article>
+<article><span class="num">02</span><h3>ROCK SIN FRONTERAS</h3><p>Clásicos, rarezas y grandes canciones que merecen volver a sonar.</p></article>
+<article><span class="num">03</span><h3>SIEMPRE EN LA VÍA</h3><p>Una estación hecha para quienes llevan el rock por dentro.</p></article>
+</section>
+
+<footer>
+<span>© <span id="year"></span> ROCK TRAIN RADIO</span>
+<span>HECHO PARA LOS QUE VIVEN EL ROCK</span>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
