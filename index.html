@@ -34,6 +34,13 @@
 <p id="status">Listo para escuchar</p>
 </div>
 <button id="playButton" class="play" aria-label="Reproducir Rock Train Radio"><span id="playIcon">▶</span></button>
+  
+
+<div class="volume-row">
+<span>🔊</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volumen">
+<span id="volumeValue">85%</span>
+</div>
+
 </div>
 <div class="whatsapp-request">
     <a href="https://wa.me/573185560384?text=Hola%20Rock%20Train%20Radio%2C%20quiero%20solicitar%20una%20canci%C3%B3n%20%F0%9F%8E%B8" target="_blank" rel="noopener">
@@ -42,11 +49,6 @@
 </div>
 
     
-
-<div class="volume-row">
-<span>🔊</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volumen">
-<span id="volumeValue">85%</span>
-</div>
 <audio id="radio" preload="none"></audio>
 <p id="error" class="error" role="alert" hidden></p>
 </div>
