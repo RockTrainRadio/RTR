@@ -1,4 +1,4 @@
-:root{--bg:#f39200;--panel:#111;--text:#f2f2f2;--muted:#9b9b9b;--accent:#f39200;--line:#2a2a2a}
+:root{--bg:090909;--panel:#111;--text:#f2f2f2;--muted:#9b9b9b;--accent:#f39200;--line:#2a2a2a}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}body{overflow-x:hidden}
 .noise{position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
 .app{width:min(1180px,92%);margin:auto}.topbar{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
